@@ -1,0 +1,251 @@
+/*
+
+    Project 4
+	Name: Manu Perron
+	Date: 4/25/2023
+	Description: Website Development & Deployment
+
+*/
+
+body,
+header,
+main,
+footer,
+h1,
+h2,
+ul,
+li, 
+p,
+form,
+fieldset,
+button,
+div{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#body{
+    background-color: black;
+    font-family: 'Anton', sans-serif;
+}
+
+#top ul{
+    margin: 25px 50px;
+    display: flex;
+}
+
+#top li{
+    list-style: none;
+    border: 1px solid rgb(41, 165, 244);
+    padding: 3px;
+    margin: 0px 5px;
+    box-shadow: 0 0 5px rgb(41, 165, 244);
+    width: 75px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#top a{
+    text-decoration: none;
+    color: rgb(41, 165, 244);
+}
+
+#top a:hover, header a:focus{
+    color: rgb(252, 198, 94);
+    padding: 10px 0px;
+}
+
+#home{
+    margin: 0px 50px;
+    height: 750px;
+    overflow: hidden;
+    background-image: url('images/IMG_0072.JPEG');
+    background-size: cover;
+    border-radius: 20px;
+    border: 1px solid rgb(41, 165, 244);
+    box-shadow: 0 0 10px rgb(41, 165, 244);
+}
+
+#home div{
+    text-align: center;
+}
+
+#home #title{
+    color: rgb(252, 198, 94);
+    font-size:xx-large;
+    text-shadow: 0 0 10px #000;
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+    margin: 100px auto 50px;
+}
+
+#home #title h2{
+    font-size: x-large;
+}
+
+#home button{
+    padding: 10px 40px;
+    background-color: #000;
+    color: rgb(252, 198, 94);
+    border: 1px solid black;
+    box-shadow: 0 0 10px #fff;
+    font-size: large;
+    border-radius: 5px;
+}
+
+#home p{
+    width: 250px;
+    margin: 75px auto 0px;
+    background-color: #000;
+    color: rgb(252, 198, 94);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff;
+    border: 1px solid black;
+}
+
+#home button:hover{
+    background-color: rgb(41, 165, 244);
+    border: 1px solid rgb(41, 165, 244);
+}
+
+#items{
+    margin: 0px 50px;
+    height: 750px;
+    overflow: hidden;
+    background-image: url('images/IMG_0071.JPEG');
+    background-size: cover;
+    border-radius: 20px;
+    border: 1px solid rgb(41, 165, 244);
+    box-shadow: 0 0 10px rgb(41, 165, 244);
+}
+
+#items ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#items li{
+    width: 250px;
+    height: 350px;
+    background-color: black;
+    color: rgb(252, 198, 94);
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px white;
+    transition: height 0.2s ease-out;
+}
+
+#items h1{
+    font-size: 20px;
+}
+
+#items img{
+    box-shadow: 0 0 10px white;
+    margin: 5px;
+}
+
+#bid{
+    margin: 0px 50px;
+    height: 750px;
+    overflow: hidden;
+    background-image: url('images/IMG_0081.jpg');
+    background-size: cover;
+    border-radius: 20px;
+    border: 1px solid rgb(41, 165, 244);
+    box-shadow: 0 0 10px rgb(41, 165, 244);
+}
+
+#bid fieldset{
+    width: min-content;
+    border-radius: 10px;
+	margin: 50px auto;
+	background-color: #000;
+    border: 1px solid black;
+	box-shadow: 0 0 10px white;
+	padding: 15px;
+    color:rgb(252, 198, 94);
+}
+
+#bid fieldset ul{
+    list-style: none;
+}
+
+#bid fieldset li{
+    margin: 20px 0px;
+}
+
+#bid fieldset h1{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#bid fieldset input{
+    float: right;
+    width: 150px;
+}
+
+#bid fieldset input:focus, fieldset textarea:focus{
+    background-color: rgb(41, 165, 244);
+    color: white;
+}
+
+#bid fieldset textarea{
+    margin: 10px 0px 0px;
+}
+
+#bid fieldset button{
+    margin: 10px auto;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    background-color: #000;
+    color: rgb(252, 198, 94);
+    border: 1px solid black;
+    box-shadow: 0 0 5px #fff;
+    font-size: medium;
+    border-radius: 5px;
+}
+
+#bottom{
+    color: rgb(41, 165, 244);
+    text-align: center;
+    margin: 30px auto;
+    font-size: 14px;
+}
+
+#bottom p{
+    margin: 10px 0px;
+}
+
+#bottom a{
+    color: rgb(41, 165, 244);
+    text-decoration: none;
+}
+
+@media (max-width: 1160px) {
+    #items li{
+        width: 150px;
+        height: 170px;
+    }
+    #items img {
+        width: 50px;
+        height: 66px;
+    }
+    #items h1 {
+        font-size: 13px;
+    }
+    #items p {
+        font-size: 10px;
+    }
+}
+
+.error {
+	color: red;
+}
+
